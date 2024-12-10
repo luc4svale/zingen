@@ -1,0 +1,63 @@
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  font: var(--fw-md)  var(--fs-base)/1.5rem var(--ff-sans);
+  cursor: pointer;
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+
+  &[aria-label] {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: calc(100% - 0.09375rem * 2);
+      height: calc(100% - 0.09375rem * 2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--bg-color);
+      border-radius: calc(0.5rem - 0.09375rem);
+
+    }
+
+    &::after {
+      content: attr(aria-label);
+      position: relative;
+      z-index: 1;
+      background: var(--btn-bg-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+  }
+
+
+  &:hover {
+    --btn-bg-color: var(--brand-gradient);
+  }
+}
+
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-sm);
+}
+
+.btn-md {
+  padding: 0.75rem 1.5rem ;
+  font-size: var(--fs-base);
+}
+
+.btn-lg {
+  padding: 1rem 2rem ;
+  font-size: 1.125rem;
+}

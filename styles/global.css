@@ -17,7 +17,7 @@
   /* Brand colors */
   --brand-color-primary: #F7B733;
   --brand-color-secondary: #FC4A1A;
-  --brand-gradient: liner-gradient(to right, #FC4A1A, #F7B733);
+  --brand-gradient: linear-gradient(to right, #FC4A1A 0%, #F7B733);
 
   /* Base colors */
   --bg-color: #09090B;
@@ -40,6 +40,13 @@
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
+
+  /* Paddings */
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+  --px-lg: 1.5rem;
+
 }
 
 html {
@@ -78,6 +85,14 @@ a {
   color: inherit;
 }
 
+a:hover {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 ul[role="list"] {
   list-style: none;
 }
@@ -87,6 +102,11 @@ ul[role="list"] {
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;
+
+    --py-base: 1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem;
+    --px-lg: 2rem;
   }
 }
 
