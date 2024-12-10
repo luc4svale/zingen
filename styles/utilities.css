@@ -27,8 +27,24 @@
   display: flex;
 }
 
-.gap-1 {
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-16 {
   gap: 1rem;
+}
+
+.gap-24 {
+  gap: 1.5rem;
 }
 
 .container {

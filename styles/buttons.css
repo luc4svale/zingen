@@ -18,11 +18,9 @@
     &::before {
       content: "";
       width: calc(100% - 0.09375rem * 2);
-      height: calc(100% - 0.09375rem * 2);
+      height: calc(100% - 0.09375rem * 2); 
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      inset: 0.09375rem;
       background-color: var(--bg-color);
       border-radius: calc(0.5rem - 0.09375rem);
 
@@ -43,6 +41,10 @@
 
   &:hover {
     --btn-bg-color: var(--brand-gradient);
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: var(--btn-color);
+    color: var(--btn-color);
   }
 }
 
@@ -60,4 +62,16 @@
 .btn-lg {
   padding: 1rem 2rem ;
   font-size: 1.125rem;
+}
+
+@media (width >= 80em) {
+  .btn-sm {
+    padding: 0.75rem 1.5rem ;
+    font-size: var(--fs-base);
+  }
+  
+  .btn-md {
+    padding: 1rem 2rem ;
+    font-size: 1.125rem;
+  }
 }

@@ -18,9 +18,38 @@
 </head>
 
 <body>
-  <header>
-    
+  <header class="container py-base">
+    <nav class="flex items-center justify-between">
+      <a href="#">
+        <img src="./assets/logo.svg" alt="Logo Zingen">
+      </a>
+      <ul role="list" class="flex items-center gap-24">
+        <li class="desktop-only">
+          <a href="#about">Conheça o app</a>
+        </li>
+        <li class="desktop-only">
+          <a href="#features">Funcionalidades</a>
+        </li>
+        <li class="desktop-only">
+          <a href="#pricing">Planos e preços</a>
+        </li>
+        <li>
+          <a class="btn btn-sm" href="#download">Baixar agora</a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
+
+  <section id="hero" class="container">
+    <img src="./assets/music-bars.svg" alt="Music Bars">
+    <h1>Quem canta seus males espanta</h1>
+    <span>Cantar nunca foi tão fácil</span>
+    <div class="buttons-wrapper flex items-center justify-center gap-16">
+      <a href="#pricing" class="btn btn-md" aria-label="Ver planos"></a>
+      <a class="btn btn-md" href="#download">Baixar agora</a>
+    </div>
+  </section>
 
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
 </body>

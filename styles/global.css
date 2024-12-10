@@ -82,7 +82,9 @@ h3 {
 
 a {
   text-decoration: none;
-  color: inherit;
+  font-weight: var(--fw-md);
+  color: var(--text-color-secondary);
+  line-height: 1.5rem;
 }
 
 a:hover {
@@ -95,6 +97,10 @@ a:hover {
 
 ul[role="list"] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (width >= 80em) {
