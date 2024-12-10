@@ -1,0 +1,30 @@
+#about {
+  background-color: var(--surface-color);
+
+  & span {
+    text-transform: uppercase;
+    font: var(--fw-md) var(--fs-sm)/1 var(--ff-sans);
+    letter-spacing: 0.08em;
+    color: var(--brand-color-primary);
+  }
+
+  & h2 {
+    margin-block: 0.5rem;
+  }
+
+  & p {
+    color: var(--text-color-secondary);
+  }
+}
+
+@media (width >= 80em) {
+  #about {
+    & div:first-child {
+      width: 40rem;
+    }
+
+    & div:last-child {
+      width: 34rem;
+    }
+  }
+}

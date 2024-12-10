@@ -18,9 +18,11 @@
     &::before {
       content: "";
       width: calc(100% - 0.09375rem * 2);
-      height: calc(100% - 0.09375rem * 2); 
+      height: calc(100% - 0.09375rem * 2);
       position: absolute;
-      inset: 0.09375rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background-color: var(--bg-color);
       border-radius: calc(0.5rem - 0.09375rem);
 
