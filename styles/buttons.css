@@ -7,7 +7,7 @@
   align-items: center;
   border: none;
   border-radius: 0.5rem;
-  font: var(--fw-md)  var(--fs-base)/1.5rem var(--ff-sans);
+  font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
   cursor: pointer;
   background: var(--btn-bg-color);
   color: var(--btn-color);
@@ -17,8 +17,11 @@
 
     &::before {
       content: "";
-      width: calc(100% - 0.09375rem * 2);
-      height: calc(100% - 0.09375rem * 2);
+      width: calc(100% - 0.09375rem * 2); 
+      height: calc(100% - 0.09375rem * 2); 
+      display: flex;
+      margin: 0;
+      padding: 0;
       position: absolute;
       top: 50%;
       left: 50%;

@@ -7,10 +7,6 @@
     border-radius: 1.5rem;
     background-color: var(--surface-color);
 
-    & .text-container {
-      max-width: 40rem;
-    }
-
     & .store-buttons-container {
       flex-direction: column;
       gap: 0.9375rem;
@@ -33,6 +29,10 @@
     & .download-content {
       padding: 8.75rem 5rem;
       gap: 2.5rem;
+
+      & .text-container {
+        max-width: 40rem;
+      }
 
       & .store-buttons-container {
         flex-direction: row;

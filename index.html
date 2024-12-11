@@ -23,7 +23,7 @@
       <a href="#">
         <img src="./assets/logo.svg" alt="Logo Zingen">
       </a>
-      <ul role="list"  class="flex items-center gap-24">
+      <ul role="list" class="flex items-center gap-24">
         <li class="desktop-only">
           <a href="#about">Conheça o app</a>
         </li>
@@ -44,13 +44,13 @@
   <section id="hero" class="container">
     <img src="./assets/music-bars.svg" alt="Music Bars">
     <h1>Quem canta seus males espanta</h1>
-    <span>Cantar nunca foi tão fácil</span>
-    <div class="buttons-wrapper flex items-center justify-center gap-16">
-      <a href="#pricing" class="btn btn-md" aria-label="Ver planos"></a>
-      <a class="btn btn-md" href="#download">Baixar agora</a>
-    </div>
+    <span>Cantar nunca foi tão fácil
+      <div class="buttons-wrapper flex items-center justify-center gap-16">
+        <a href="#pricing" class="btn btn-md" aria-label="Ver planos"></a>
+        <a class="btn btn-md" href="#download">Baixar agora</a>
+      </div>
 
-    <img src="./assets/images/app-mockups.png" alt="Imagem de dois smartphones mostrando interfaces do Zingen">
+      <img src="./assets/images/app-mockups.png" alt="Imagem de dois smartphones mostrando interfaces do Zingen">
   </section>
 
   <section id="about" class="container py-xl flex items-center gap-32">
@@ -61,7 +61,9 @@
       </header>
 
       <p>
-        Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto. 
+        Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas.
+        Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é
+        comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.
       </p>
     </div>
     <div class="desktop-only">
@@ -86,10 +88,12 @@
         <i class="ph-fill ph-game-controller icon"></i>
         <h3>Experiência gamificada</h3>
         <p>
-          Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e comemore sua evolução!
+          Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e
+          comemore sua evolução!
         </p>
       </div>
-      <img class="desktop-only cut-top" src="./assets/images/screen-01.png" alt="Tela do aplicativo Zingen que mostra a funcionalide de gamificação">
+      <img class="desktop-only cut-top" src="./assets/images/screen-01.png"
+        alt="Tela do aplicativo Zingen que mostra a funcionalide de gamificação">
     </div>
 
     <div class="card px-lg py-lg">
@@ -97,18 +101,21 @@
         <i class="ph-fill ph-microphone-stage icon"></i>
         <h3>Grave suas performances</h3>
         <p>
-          Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e vídeo permite que você aproveite a experiência ao máximo! 
+          Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e
+          vídeo permite que você aproveite a experiência ao máximo!
         </p>
       </div>
     </div>
 
     <div class="card px-lg py-lg flex gap-32">
-      <img class="desktop-only cut-top" src="./assets/images/screen-02.png" alt="Tela do aplicativo Zingen que mostra a funcionalide compartilhamento de gravações">
+      <img class="desktop-only cut-top" src="./assets/images/screen-02.png"
+        alt="Tela do aplicativo Zingen que mostra a funcionalide compartilhamento de gravações">
       <div>
         <i class="ph-fill ph-users-three icon"></i>
         <h3>Compartilhe com a comunidade</h3>
         <p>
-          Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu feed!
+          Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu
+          feed!
         </p>
       </div>
     </div>
@@ -118,10 +125,12 @@
         <i class="ph-fill ph-music-notes icon"></i>
         <h3>Letras em tempo-real</h3>
         <p>
-          Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar a voz original da música para ajudar.
+          Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar
+          a voz original da música para ajudar.
         </p>
       </div>
-      <img class="desktop-only" src="./assets/images/screen-03.png" alt="Tela do aplicativo Zingen que mostra a funcionalide de letras das músicas em tempo real">
+      <img class="desktop-only" src="./assets/images/screen-03.png"
+        alt="Tela do aplicativo Zingen que mostra a funcionalide de letras das músicas em tempo real">
     </div>
 
   </section>
@@ -134,120 +143,82 @@
       </h2>
     </header>
 
-    <div class="cards-container flex items-center gap-32" >
+    <div class="cards-container flex items-center gap-32">
 
       <div class="card flex items-center justify-center">
         <div class="content-wrapper px-lg flex flex-col gap-24">
           <header>
-            <strong>Básico</strong>
-            <p>
-              Baixe o app e comece a cantar agora mesmo!
-            </p>
+            <h3>Básico</h3>
+            <p>Baixe o app e comece a cantar agora mesmo!</p>
           </header>
-  
-          <span class="price">Grátis</span>
-  
+
+          <zin-pricing>Grátis</zin-pricing>
+
           <a href="#download" class="btn btn-md" aria-label="Baixar agora"></a>
-  
+
           <div class="divider"></div>
-  
+
           <ul role="list" class="flex flex-col gap-16">
+            <li class="flex gap-8">Com anúncios</li>
+
+            <li class="flex gap-8">Até 5 músicas por dia</li>
+
             <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Com anúncios</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Até 5 músicas por dia</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>
-                Cante apenas as músicas disponíveis no plano gratuito
-              </span>
+              Cante apenas as músicas disponíveis no plano gratuito
             </li>
           </ul>
         </div>
-
-
-
       </div>
 
-      <div class="card flex items-center justify-center">
+      <div class="card premium flex items-center justify-center">
         <div class="content-wrapper px-lg flex flex-col gap-24">
+          <trial-period>1 mês grátis</trial-period>
           <header>
-            <strong>Premium</strong>
-            <p>
-              Ideal para quem já cansou de passar vergonha no Karaokê
-            </p>
+            <h3>Premium</h3>
+            <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
           </header>
-  
-          <span class="price">R$ 24,90 <span>/mês</span></span>
-  
+
+          <zin-pricing>R$ 24,90 <small>/mês</small></zin-pricing>
+
           <a href="#download" class="btn btn-md">Experimente de graça</a>
-  
+
           <div class="divider"></div>
-  
+
           <ul role="list" class="flex flex-col gap-16">
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Sem interrupção de anúncios</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Cante quantas músicas quiser</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>
-                Cante todas as músicas da biblioteca
-              </span>
-            </li>
+            <li class="flex gap-8">Sem interrupção de anúncios</li>
+
+            <li class="flex gap-8">Cante quantas músicas quiser</li>
+
+            <li class="flex gap-8">Cante todas as músicas da biblioteca</li>
           </ul>
 
         </div>
       </div>
 
       <div class="card flex items-center justify-center">
-
         <div class="content-wrapper px-lg flex flex-col gap-24">
 
           <header>
-            <strong>Família</strong>
+            <h3>Família</h3>
             <p>
               Para aquelas famílias que adoram se reunir pra cantar
             </p>
           </header>
-  
-          <span class="price">R$ 21,90 <span>/mês por pessoa</span></span>
-  
+
+          <zin-pricing>R$ 21,90 <small>/mês por pessoa</small></zin-pricing>
+
           <a href="#download" class="btn btn-md" aria-label="Assinar agora"></a>
-          
+
           <div class="divider"></div>
-  
+
           <ul role="list" class="flex flex-col gap-16">
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Sem interrupção de anúncios</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>Cante quantas músicas quiser</span>
-            </li>
-  
-            <li class="flex gap-8">
-              <i class="ph ph-check icon"></i>
-              <span>
-                Cante todas as músicas da biblioteca
-              </span>
-            </li>
+            <li class="flex gap-8">Sem interrupção de anúncios</li>
+
+            <li class="flex gap-8">Cante quantas músicas quiser</li>
+
+            <li class="flex gap-8">Cante todas as músicas da biblioteca</li>
           </ul>
-          
+
           <small>Mínimo de 4 pessoas no plano família.</small>
         </div>
 
@@ -264,9 +235,10 @@
           <strong>Download</strong>
           <h2>Bora cantar?</h2>
         </header>
-  
+
         <p>
-          Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais envolvente. Baixe o Zingen agora e transforme suas performances em experiências inesquecíveis!
+          Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais envolvente. Baixe o
+          Zingen agora e transforme suas performances em experiências inesquecíveis!
         </p>
       </div>
 
@@ -279,7 +251,8 @@
         </a>
       </div>
 
-      <img src="./assets/images/man-listening-music.png" alt="Imagem de um jovem rapaz empolgado ao escutar música com fones de ouvido">
+      <img src="./assets/images/man-listening-music.png"
+        alt="Imagem de um jovem rapaz empolgado ao escutar música com fones de ouvido">
 
     </div>
 
