@@ -31,8 +31,16 @@
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .justify-between {
@@ -41,6 +49,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-8 {
+  gap: 0.5rem;
 }
 
 .gap-16 {
