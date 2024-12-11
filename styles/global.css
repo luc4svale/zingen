@@ -55,10 +55,13 @@ html {
   font-size: var(--fs-base); 
   line-height: 1.6; 
   color: var(--text-color-primary);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {

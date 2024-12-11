@@ -1,0 +1,48 @@
+#download {
+  & .download-content {
+    position: relative;
+    padding: 3rem 1.5rem 15rem;
+    gap: 2rem;
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+    background-color: var(--surface-color);
+
+    & .text-container {
+      max-width: 40rem;
+    }
+
+    & .store-buttons-container {
+      flex-direction: column;
+      gap: 0.9375rem;
+    }
+
+    & img[src*="man-listening-music"] {
+      position: absolute;
+      left: 8.696875rem;
+      bottom: 0;
+      width: 14.875rem;
+      height: 20rem;
+      filter: drop-shadow(0.5rem 0.5rem 2rem #000000a3);
+    }
+  }
+
+}
+
+@media (width >=80em) {
+  #download {
+    & .download-content {
+      padding: 8.75rem 5rem;
+      gap: 2.5rem;
+
+      & .store-buttons-container {
+        flex-direction: row;
+      }
+
+      & img[src*="man-listening-music"] {
+        left: 49.875rem;
+        width: 29.125rem;
+        height: 39.1875rem;
+      }
+    }
+  }
+}
