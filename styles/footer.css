@@ -1,0 +1,48 @@
+footer.container {
+  gap: 3rem;
+  padding: 3rem 3rem 1.5rem;
+
+  & .top {
+    gap: 3rem;
+
+    & nav ul li {
+      &.title {
+        font: var(--fw-md) 0.75rem/1 var(--ff-sans);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brand-color-primary);
+      }
+
+    }
+  }
+
+  & .bottom {
+    gap: 1.5rem;
+
+    & .copyright {
+      font: var(--fw-base) var(--fs-sm)/1.5rem var(--ff-sans);
+      letter-spacing: 0;
+      color: var(--text-color-secondary)
+    }
+  }
+}
+
+@media (width >= 80rem) {
+  footer.container {
+    gap: 5rem;
+    padding: 5rem 2rem 2rem;
+
+    & .top {
+      gap: unset;
+      grid-auto-flow: column;
+    }
+
+    & .bottom {
+      gap: unset;
+
+      & .copyright {
+        margin-left: auto;
+      }
+    }
+  }
+}
